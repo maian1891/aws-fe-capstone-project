@@ -8,9 +8,7 @@ COPY . .
 
 RUN npm install
 
-RUN npm run test
-
-RUN npm run build
+RUN npm run build:staging
 
 RUN apt-get update \
     && apt-get install -y nginx --option=Dpkg::Options::=--force-confdef\
