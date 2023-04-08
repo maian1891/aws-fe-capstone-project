@@ -43,14 +43,6 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
-
-
-### You can build docker files with command line arguments:
-docker build -t fe-capstone .
-
-### You can run docker with command line arguments:
-docker run -d --rm fe-capstone
-
 ### Set Environment Variables in Mac/Linux
 #### Instructions
 1. Use the `set_env.sh` file present in the `project/` directory to configure these values on your local machine. This is a file that has been set up for your convenience to manage your environment.
@@ -82,3 +74,13 @@ Below is an example. Make sure that you replace the values with ones that are ap
 setx AWS_ACCESS_KEY_ID postgres
 setx AWS_SECRET_ACCESS_KEY postgres
 ```
+
+
+### You can build docker files with command line arguments:
+docker build -t fe-capstone .
+
+### You can run docker with command line arguments:
+docker run -d --rm -p 3000:8080 fe-capstone
+
+### Open URL
+http://localhost:3000/
