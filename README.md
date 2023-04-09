@@ -75,7 +75,6 @@ setx AWS_ACCESS_KEY_ID postgres
 setx AWS_SECRET_ACCESS_KEY postgres
 ```
 
-
 ### You can build docker files with command line arguments:
 docker build -t fe-capstone .
 

@@ -1,5 +1,8 @@
+require('dotenv').config()
+
 // TODO: Once your application is deployed, copy an API id here so that the frontend could interact with it
 export const apiEndpoint = process.env.REACT_APP_API_ENDPOINT
+console.log(`api: ${process.env.REACT_APP_API}`)
 console.log(`apiEndpoint: ${apiEndpoint}`)
 
 export const authConfig = {
